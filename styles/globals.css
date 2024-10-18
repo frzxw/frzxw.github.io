@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: #050816;
+  color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-poppins);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Gradient text animation */
+@keyframes gradient-text {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* For tablets and larger screens */
+@media (min-width: 640px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  .navbar ul {
+    flex-direction: row;
+  }
+  .navbar a {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 639px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+  }
+  .navbar a {
+    font-size: 0.875rem;
+  }
+}
+
+.animate-gradient-text {
+  animation: gradient-text 3s ease infinite;
+  background-size: 200% 200%;
+}
