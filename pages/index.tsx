@@ -219,7 +219,11 @@ export default function Portfolio() {
                 <div className="space-y-8">
                   <div className="bg-white bg-opacity-5 rounded-lg p-6 backdrop-blur-sm transition duration-300 hover:bg-opacity-10 hover:shadow-lg transform hover:-translate-y-1">
                     <h3 className="text-md sm:text-lg md:text-xl font-display font-semibold text-blue-400 mb-2">Website Division Staff</h3>
-                    <p className="text-gray-300 mb-2 text-sm sm:text-base">DINAMIK 19</p>
+                    <p className="text-gray-300 mb-2 text-sm sm:text-base">
+                      <a href="https://www.instagram.com/dinamik_upi/" target="_blank" rel="noopener noreferrer" className="text-blue-300 hover:text-blue-100 transition duration-300">
+                        DINAMIK 19 | KEMAKOM UPI
+                      </a>
+                    </p>
                     <ul className="list-disc list-inside text-gray-200 text-sm sm:text-base space-y-1">
                       <li>Developed a landing page using Laravel and Tailwind CSS, ensuring clean and maintainable code.</li>
                       <li>Applied responsive design principles to create a user-friendly experience across various devices.</li>
