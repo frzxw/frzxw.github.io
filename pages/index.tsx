@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import { Helmet } from 'react-helmet';
 import { motion, useAnimation, useInView, AnimatePresence } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaBars, FaTimes } from 'react-icons/fa'
+import { Analytics } from "@vercel/analytics/react"
 
 function FluidGradientBackground() {
   useEffect(() => {
@@ -290,6 +291,7 @@ export default function Portfolio() {
           </footer>
         </main>
       </div>
+      <Analytics />
     </>
   )
 }
